@@ -23,7 +23,7 @@ module.exports.session = {
   url: process.env.COVPRESS_MONGO_URI,
   collection: 'sessions',
   cookie: {
-    secure: false,
+    secure: true,
     maxAge: 24 * 60 * 60 * 1000,
   },
   /***************************************************************************

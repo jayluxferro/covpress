@@ -50,7 +50,7 @@ module.exports.datastores = {
     ***************************************************************************/
     adapter: 'sails-mongo',
     url: process.env.COVPRESS_MONGO_URI,
-    ssl: false
+    ssl: true
   },
 
 
