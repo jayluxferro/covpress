@@ -38,7 +38,7 @@ module.exports = {
 
     const mailContent = `<b>Name of Client:</b> ${inputs.fullname}<br/> <b>Email:</b> ${inputs.email}<br/> <b>Phone Number:</b> ${inputs.phone}<br/> <b>Company:</b> ${inputs.company}<br/> <b>Message Content:</b> ${inputs.message}.<br/><br/><br/>`
 
-    if(await sails.helpers.sendHtmlEmail(inputs.fullname, 'no-reply@sperixlabs.org', 'A contact request from client', mailContent)){
+    if(await sails.helpers.sendHtmlEmail(inputs.fullname, process.env.sperixlabs_email, 'A contact request from client', mailContent)){
       status = true
       message = 'Message sent'
     }
