@@ -1,0 +1,38 @@
+<div class="login-box">
+    <div class="logo">
+        <a class="boxFont" style="color: #ff8900;">JDL Export House</a>
+        <small>&nbsp;</small>
+    </div>
+    <div class="card">
+        <div class="body">
+            <form id="sign_in" method="post" action="/auth/verify">
+                <div class="msg">Verify to start your session</div>
+                <div class="input-group">
+                    <div style="text-align: center;">
+                        <img src="/cms/images/dp.jpg" class="img-circle dp"/>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="material-icons">lock</i>
+                    </span>
+                    <div class="form-line">
+                        <input type="text" class="form-control" name="passcode" placeholder="Verification Code" style="text-align: center;" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">&nbsp;</div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-block bg-pink waves-effect" type="submit">Verify</button>
+                    </div>
+                    <div class="col-xs-4">&nbsp;</div>
+                </div>
+                <div class="row m-t-15 m-b--20">
+                    <div class="col-xs-12">
+                        <a href="/auth/login">Return to Log In</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

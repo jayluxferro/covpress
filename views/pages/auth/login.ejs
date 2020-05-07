@@ -1,0 +1,46 @@
+<div class="login-box">
+    <div class="logo">
+        <a class="boxFont" style="color: #ff8900;">JDL Export House</a>
+        <small>&nbsp;</small>
+    </div>
+    <div class="card">
+        <div class="body">
+            <div class="row">
+              <div class="col-md-12">
+                  <% if (typeof req.session.success !== 'undefined') { %>
+                          <div class="alert alert-success alert-dismissable" style="text-align: center;">
+                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                  <i class="fa fa-info-circle"></i> <strong><%= req.session.success %> </strong>
+                          </div>
+                          <% delete req.session.success %>
+                  <% }else if (typeof req.session.warning !== 'undefined') { %>
+                          <div class="alert alert-warning alert-dismissable" style="text-align: center;">
+                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                  <i class="fa fa-info-circle"></i> <strong><%= req.session.warning %> </strong>
+                          </div>
+                          <% delete req.session.warning %>
+                  <% }else if (typeof req.session.error !== 'undefined') { %>
+                          <div class="alert alert-danger alert-dismissable" style="text-align: center;">
+                                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                                  <i class="fa fa-info-circle"></i> <strong><%= req.session.error %> </strong>
+                          </div>
+                          <% delete req.session.error %>
+                  <% } %>
+              </div>
+            </div>
+            <form id="sign_in" method="post" action="/auth/login">
+                <div class="msg">Sign in to start your session</div>
+                <div class="input-group" style="text-align: center;">
+                  <img src="/cms/images/zoho.png" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-2"></div>
+                    <div class="col-xs-8">
+                      <a href="https://accounts.zoho.com/oauth/v2/auth?scope=ZohoCRM.users.ALL&client_id=<%= clientId %>&response_type=code&access_type='online'&redirect_uri=<%= redirectURI %>" style="background-color: #388b09; color: #fff;" class="btn btn-block waves-effect" type="button">Click to Proceed</a>
+                    </div>
+                    <div class="col-xs-2"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
