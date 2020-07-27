@@ -371,14 +371,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://jdlexportgh.com',
-    internalEmailAddress: 'info@jdlexportgh.com',
-    sites: {
-      main: 'https://jdlexportgh.com',
-      cms:  'https://cms.jdlexportgh.com',
-      erp:  'https://erp.jdlexportgh.com',
-      mail: 'https://mail.jdlexportgh.com'
-    },
+    baseUrl: 'https://covpressgh.com',
+    internalEmailAddress: 'info@covpressgh.com',
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',
