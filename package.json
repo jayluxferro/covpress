@@ -11,7 +11,7 @@
     "connect-mongo": "^1.1.0",
     "format-unicorn": "^1.1.1",
     "grunt": "1.0.4",
-    "nodemailer": "^6.4.6",
+    "nodemailer": "^6.4.16",
     "sails": "^1.2.4",
     "sails-hook-grunt": "^4.0.0",
     "sails-hook-organics": "^1.1.0",
